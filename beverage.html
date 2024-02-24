@@ -32,17 +32,49 @@
         <br>
         <br>
 
-        <a style="font-weight: bold; font-size: larger; text-decoration: none; color: black;" href="condiments.html">Dark Roast&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a style="font-weight: bold; font-size: larger; text-decoration: none; color: black;" href="condiments.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espresso</a>
+        <button onclick="selectDarkRoast()" style="font-weight: bold; font-size: larger; text-decoration: none; color: black;">Dark Roast</button>
+        <button onclick="selectEspresso()" style="font-weight: bold; font-size: larger; text-decoration: none; color: black;" >Espresso</button>
         <br>
         <br>
-        <br>
-        <a style="font-weight: bold; font-size: larger; text-decoration: none; color: black;" href="condiments.html">House Blend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a style="font-weight: bold; font-size: larger; text-decoration: none; color: black;" href="condiments.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decaf</a>
+        <button onclick="selectHouseBlend()" style="font-weight: bold; font-size: larger; text-decoration: none; color: black;">House Blend</button>
+        <button onclick="selectDecaf()" style="font-weight: bold; font-size: larger; text-decoration: none; color: black;">Decaf</button>
 
+        <br>
+        <br>
+        <br>
 
     </p>
 
+    <script>
+        function goToTheNextPage() {
+            let beverage = document.getElementById("beverage").value;
+            location.href = "condiments.html?beverage=" + beverage;
+        }
+
+        function selectDarkRoast() {
+            location.href = "condiments.html?beverage=Dark Roast";
+        }
+
+        function selectEspresso() {
+            location.href = "condiments.html?beverage=Espresso";
+        }
+
+        function selectHouseBlend() {
+            location.href = "condiments.html?beverage=House Blend";
+        }
+
+        function selectDecaf() {
+            location.href = "condiments.html?beverage=Decaf";
+        }
+
+
+
+
+
+
+    </script>
+
+    
 
 
 
