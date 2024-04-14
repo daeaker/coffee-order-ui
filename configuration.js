@@ -50,7 +50,7 @@ async function updateTheNavigationBar() {
         loginTag.innerHTML =
         '<a class="right"><a href="#" onclick="logout()">Logout</a></a>'
     } else {
-        loginTag.innerHTML = '<a class="right"><a href="login.hrml">Login</a></a>'
+        loginTag.innerHTML = '<a class="right"><a href="login.html">Login</a></a>'
     }
 }
 
